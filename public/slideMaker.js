@@ -52,9 +52,9 @@ function curiosity(){
 
 				var image = response2.latest_photos[count].img_src;
 				
-				var caption =  response2.latest_photos[count].rover.name + " Sol: " + response2.latest_photos[count].sol;
+				var caption =  response2.latest_photos[count].rover.name;
 
-				var date = response2.latest_photos[count].earth_date;
+				var date = response2.latest_photos[count].earth_date + " Sol: " + response2.latest_photos[count].sol;
 
 				var body = "Mars";
 
