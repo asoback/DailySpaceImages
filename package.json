@@ -11,5 +11,8 @@
     "url": "http://www.github.com/asoback/DailySpaceImages"
   },
   "author": "Andrew Soback",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

@@ -1,8 +1,13 @@
 //Nasa API key
 var apiKey = config.API_KEY;
-/* See https://gist.github.com/derzorngottes/3b57edc1f996dddcab25 
-for explanation on adding config.js file and .gitignore */
+/* Add this -> config.js 
+	var config = {API_KEY: [your nasa key in quotes here]};
+and .gitignore
+	config.js
+See for details: https://gist.github.com/derzorngottes/3b57edc1f996dddcab25 
+*/
 /* See https://api.nasa.gov/index.html#getting-started for free NASA api key */
+
 
 var slideList = [];
 var req = new XMLHttpRequest();
@@ -29,6 +34,7 @@ req.addEventListener('load', function(){
 		var epicImage = {"img_src":image, "img_caption":caption, "img_body":body, "date":date};
 		
 		slideList.push(epicImage);
+		console.log("Added EPIC image " + count);
 	}
 	curiosity();
  });
@@ -55,9 +61,11 @@ function curiosity(){
 				var curiosityPic = {"img_src":image, "img_caption":caption, "img_body":body, "date":date};
 
 				slideList.push(curiosityPic);
+				console.log("Added EPIC image " + count);
 			}
 		}
-		spirit();
+		//For now skipping the other two rovers, since they aren't responding with clear images
+		startSlideShow();
 	 });
 	 req2.send(null);
 }
@@ -203,8 +211,6 @@ function startSlideShow(){
 /*
 
 To do - 
-
-How to hide apikey?
 
 How to host on Heroku?
 
