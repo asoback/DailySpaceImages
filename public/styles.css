@@ -1,0 +1,69 @@
+body {
+  background-color: black;
+}
+
+img {
+  margin-top: 50px;
+}
+
+.carousel-caption{
+  text-align:end;
+  color:palegoldenrod;
+}
+
+/* Needed to center image*/
+.carousel-item {
+  text-align: center;
+  img {
+      margin: 0 auto;
+  }
+}
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left:0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/***********************************************/
+
+/*Indicator colors
+Default to gray*/
+.carousel-indicators .earth {
+    border: rgba(0, 0, 255, .25) 1px solid;  
+}
+.carousel-indicators .mars {
+    border: rgba(255, 0, 0, .35) 1px solid;  
+}
+.carousel-indicators .active {
+  border: white 1px solid;
+}
+
+.carousel-indicators {
+  position:absolute;
+  margin-bottom: -50px;
+}

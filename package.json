@@ -1,0 +1,15 @@
+{
+  "name": "daily_space_pictures",
+  "version": "1.0.0",
+  "description": "Recent pictures from spacecraft and rovers",
+  "main": "express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/asoback/DailySpaceImages"
+  },
+  "author": "Andrew Soback",
+  "license": "GPL-3.0"
+}
