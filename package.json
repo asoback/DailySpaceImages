@@ -2,7 +2,7 @@
   "name": "daily_space_pictures",
   "version": "1.0.0",
   "description": "Recent pictures from spacecraft and rovers",
-  "main": "express.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
